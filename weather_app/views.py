@@ -7,14 +7,6 @@ import requests, json
 # Create your views here.
 class WeatherApi(APIView):
 
-
-    # def weather(self):
-    #     API_KEY = "509d1236aab16bb823897a206a5b2fd0"
-    #     city_name = 'London'
-    #     url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_KEY}&units={'metric'}"
-    #     response = requests.get(url)
-    #     j = json.loads(response.text)
-    #     self.temp = j['main']['temp']
     def get(self, request, temp):
         API_KEY = "509d1236aab16bb823897a206a5b2fd0"
         city_name = temp
